@@ -1,0 +1,58 @@
+[
+   {
+      "role": "system",
+      "content": "You are playing the number guessing game. The game is played in 6 rounds. In every round you have 20 attempts to guess the number the user is thinking about. The number chosen in each round may differ. You are guessing together with 2 other agents and the sum of your guesses needs to match the number that the user is thinking. Remember that the other agents are also ChatGPT agents like you trying to reason about the best joint strategy. Try to take this into account in how you approach this task. Similarly, consider how your guesses affect how the other agents try to solve the task. This is a social game and the success relies on your joint performance. At the same time, while you can reason about the best strategy in this game, in each attempt you can only offer your own individual guess, not a combined sum. When giving your guess, end your response by clearly saying 'my guess is:' followed by your guessed number."
+   },
+   {
+      "role": "user",
+      "content": "This is the recap of round 1:\nAttempt | Your guess | Other agents' guesses | Sum | Comparison\n1 | 7 | 20, 13 | 40 | high\n2 | 4 | 10, 10 | 24 | low\n3 | 6 | 14, 15 | 35 | high\n4 | 5 | 11, 12 | 28 | high\n5 | 4 | 8, 10 | 22 | low\n6 | 5 | 10, 12 | 27 | high\n7 | 4 | 9, 10 | 23 | low\n8 | 5 | 10, 11 | 26 | correct\nThe round ended with the following result: correct\n"
+   },
+   {
+      "role": "user",
+      "content": "This is the recap of round 2:\nAttempt | Your guess | Other agents' guesses | Sum | Comparison\n1 | 5 | 16, 7 | 28 | low\n2 | 8 | 18, 9 | 35 | high\n3 | 7 | 17, 8 | 32 | high\n4 | 6 | 15, 7 | 28 | low\n5 | 7 | 16, 8 | 31 | high\n6 | 6 | 15, 7 | 28 | low\n7 | 7 | 16, 8 | 31 | high\n8 | 6 | 15, 7 | 28 | low\n9 | 7 | 16, 8 | 31 | high\n10 | 6 | 15, 7 | 28 | low\n11 | 7 | 16, 8 | 31 | high\n12 | 6 | 15, 7 | 28 | low\n13 | 7 | 16, 8 | 31 | high\n14 | 6 | 15, 7 | 28 | low\n15 | 7 | 16, 8 | 31 | high\n16 | 6 | 15, 7 | 28 | low\n17 | 7 | 16, 8 | 31 | high\n18 | 6 | 15, 7 | 28 | low\n19 | 7 | 16, 8 | 31 | high\n20 | 6 | 15, 7 | 28 | low\nThe round ended with the following result: wrong\n"
+   },
+   {
+      "role": "user",
+      "content": "This is the start of round 3. I'm thinking of a number between 20 and 40. You and 2 other agents must guess a number between 0 and 20 and the sum of your guesses will be compared with my number. What's your first guess?"
+   },
+   {
+      "role": "assistant",
+      "content": "Based on the earlier rounds, it seems that the other two agents are guessing relatively high. I will try to counterbalance this by guessing lower. My guess is: 4."
+   },
+   {
+      "role": "user",
+      "content": "You answered 4, while the other agents answered 15, 7. The total sum is 26, which is too high."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Since our combined guess on the last attempt was too high, I'll lower my guess. My guess is: 3."
+   },
+   {
+      "role": "user",
+      "content": "You answered 3, while the other agents answered 12, 5. The total sum is 20, which is too low."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Given that our previous total was too low, I'll increase my guess slightly. My guess is: 5."
+   },
+   {
+      "role": "user",
+      "content": "You answered 5, while the other agents answered 14, 6. The total sum is 25, which is too high."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Considering the previous guesses were too high, I will lower my guess to help balance out our total. My guess is: 4."
+   }
+]

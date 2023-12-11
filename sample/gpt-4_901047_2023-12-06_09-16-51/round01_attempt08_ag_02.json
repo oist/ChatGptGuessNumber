@@ -1,0 +1,98 @@
+[
+   {
+      "role": "system",
+      "content": "You are playing the number guessing game. The game is played in 6 rounds. In every round you have 20 attempts to guess the number the user is thinking about. The number chosen in each round may differ. You are guessing together with 2 other agents and the sum of your guesses needs to match the number that the user is thinking. Remember that the other agents are also ChatGPT agents like you trying to reason about the best joint strategy. Try to take this into account in how you approach this task. Similarly, consider how your guesses affect how the other agents try to solve the task. This is a social game and the success relies on your joint performance. At the same time, while you can reason about the best strategy in this game, in each attempt you can only offer your own individual guess, not a combined sum. When giving your guess, end your response by clearly saying 'my guess is:' followed by your guessed number."
+   },
+   {
+      "role": "user",
+      "content": "This is the start of round 1. I'm thinking of a number between 20 and 40. You and 2 other agents must guess a number between 0 and 20 and the sum of your guesses will be compared with my number. What's your first guess?"
+   },
+   {
+      "role": "assistant",
+      "content": "As we are three guessing together and the user is thinking of a number between 20 and 40, I suggest we start near the lower end of this range. If I guess around 7, it gives us some leeway if my estimate is off and also allows the other two agents to adjust their guesses based on mine. So, my guess is: 7."
+   },
+   {
+      "role": "user",
+      "content": "You answered 7, while the other agents answered 20, 13. The total sum is 40, which is too high."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Knowing that our combined guesses in the previous round were too high, we should aim lower. Given that the other agents are likely to adjust their guesses down as well, I'll lower mine more significantly to help balance things out. My guess is: 4."
+   },
+   {
+      "role": "user",
+      "content": "You answered 4, while the other agents answered 10, 10. The total sum is 24, which is too low."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Given we need to collectively aim higher and the other agents may also adjust their guesses, I'm going to increase my guess slightly. To keep the balance, my guess is: 6."
+   },
+   {
+      "role": "user",
+      "content": "You answered 6, while the other agents answered 14, 15. The total sum is 35, which is too high."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Given that we just went over, our combined guess should be lowered slightly. Allowing room for the other agents to also adjust their guesses lower, my guess is: 5."
+   },
+   {
+      "role": "user",
+      "content": "You answered 5, while the other agents answered 11, 12. The total sum is 28, which is too high."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "We have overestimated the previous guess. Therefore, in order to not overshoot, let's adjust our guesses slightly downwards. My guess is: 4."
+   },
+   {
+      "role": "user",
+      "content": "You answered 4, while the other agents answered 8, 10. The total sum is 22, which is too low."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "We just slightly undershot the number, so our total estimate needs to raise. Assuming the other agents will also adjust their guesses a bit higher, my guess is: 5."
+   },
+   {
+      "role": "user",
+      "content": "You answered 5, while the other agents answered 10, 12. The total sum is 27, which is too high."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "We overshot the total sum last time, so reducing our estimates slightly could help. Considering the other agents will likely do the same, my guess is: 4."
+   },
+   {
+      "role": "user",
+      "content": "You answered 4, while the other agents answered 9, 10. The total sum is 23, which is too low."
+   },
+   {
+      "role": "user",
+      "content": "What's your next guess between 0 and 20?"
+   },
+   {
+      "role": "assistant",
+      "content": "Given that we're increasing our total guess a bit after underestimating, and assuming the other agents will do the same, my guess is: 5."
+   }
+]
